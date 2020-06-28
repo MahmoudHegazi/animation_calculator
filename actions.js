@@ -16,7 +16,9 @@ var myobject = {
 	   return n;
 	},
 	cleans: () => {
+	   //mon();
 	   myobject.myInputs = "";
+	   exportRoot.screen.text = '';
 	}
 	
 }
@@ -215,19 +217,16 @@ function mon() {
 /*
 function helper() {
 var myoperators = ["+", "-", "/", ".", "*", "%"];
-
 	   var str = myobject.myInputs;
        var last = str.length - 1;
        var lastchar = str[last];
        var checker = myobject.myobject.myoperators.includes(lastchar);
-
      if (checker == true) {
 		 exportRoot.screen.text = myobject.myInputs;
 	 } else {
 		  get_value('**');
           exportRoot.screen.text += '**';	
 	 }
-
  }      
 */
 
@@ -307,3 +306,5 @@ if (event.keyCode == 48) {
 }
 
 }
+
+
